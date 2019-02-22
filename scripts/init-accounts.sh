@@ -20,11 +20,11 @@ if [ ! -e $LOCKFILE ]; then
 
        set -x
 
-       qcli importprivkey "cMbgxCJrTYUqgcmiC1berh5DFrtY1KeU4PXZ6NZxgenniF1mXCRk" # addr=qUbxboqjBRp96j3La8D1RYkyqx5uQbJPoW hdkeypath=m/88'/0'/1'
-       qcli importprivkey "cRcG1jizfBzHxfwu68aMjhy78CpnzD9gJYZ5ggDbzfYD3EQfGUDZ" # addr=qLn9vqbr2Gx3TsVR9QyTVB5mrMoh4x43Uf hdkeypath=m/88'/0'/2'
+       qcli importprivkey "azoAe4hq1zzrWRU5vNiQuVcPXCwmfSgRwpuYnTfUPYD2aW5ukjiK" # addr=5SRQdrJqMuLGVpaimmkWBf5geqmFcWr4QX hdkeypath=m/88'/0'/1'
+       qcli importprivkey "axjsxJrtNhNmWyEkviayVVD5npYy32ei3N1nCdDmvj7ezhjKzF3z" # addr=5kNZ95n1BwzDYNjjwwLE6RmNJPX4Q45bGT hdkeypath=m/88'/0'/2'
 
-       solar prefund qUbxboqjBRp96j3La8D1RYkyqx5uQbJPoW 500
-       solar prefund qLn9vqbr2Gx3TsVR9QyTVB5mrMoh4x43Uf 500
+       solar prefund 5SRQdrJqMuLGVpaimmkWBf5geqmFcWr4QX 500
+       solar prefund 5kNZ95n1BwzDYNjjwwLE6RmNJPX4Q45bGT 500
        touch $LOCKFILE
 
        set -
