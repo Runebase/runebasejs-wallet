@@ -30,12 +30,12 @@ describe("Wallet", () => {
     assert.equal(wallet.address, "nV5FqbtGTHpAHBoG2PHq28A7N4KbDaiBkQ")
   })
 
-  const wifPrivateKey = "WzwAv6322CDgHXpAnEYYGzVMtMzTZyVZHopnYPmXydYK5Px6JVGS"
+  const wifPrivateKey = "WzxXxpgKjAg2sk4y7ieFB2WkhAgbJ2bS2bpTPFS3xVKcThVkUtGf"
 
   it("recovers wallet from WIF", () => {
     const wallet = network.fromWIF(wifPrivateKey)
 
-    assert.equal(wallet.address, "nrPxhXbSgKQ83P5yXD5gWYhNPtMGLi5XHi")
+    assert.equal(wallet.address, "nmLUR7Jsqycqp374TkDAcrErwUydEhcwnc")
   })
 
   it("recovers wallet from EncryptedPrivateKey", () => {
@@ -92,7 +92,7 @@ describe("Wallet", () => {
     const insight = network.insight()
     const wallet = network.fromWIF(wifPrivateKey)
 
-    const toAddress = "nUqy7k4zSGcVW4C7BUUQrqf2eNYv7uk29T"
+    const toAddress = "npuqCtHQx1FdhNpYCGsfS8pW3GUKqxxpQF"
     const amount = 1e8 // 1 runebase (in sat)
 
     const senderOldInfo = await insight.getInfo(wallet.address)
