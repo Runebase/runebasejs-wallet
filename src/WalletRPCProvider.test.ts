@@ -9,7 +9,7 @@ describe("WalletRPCProvider", async () => {
 
   const network = networks.regtest
 
-  const wifPrivateKey = "cMbgxCJrTYUqgcmiC1berh5DFrtY1KeU4PXZ6NZxgenniF1mXCRk"
+  const wifPrivateKey = "WxYBEMgS8wGspNxz5Y3CbnLT9nrCS1o3b5A38XQg5T9F3fmzCHyR"
   const wallet: Wallet = network.fromWIF(wifPrivateKey)
 
   // tslint:disable:max-line-length
