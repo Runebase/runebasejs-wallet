@@ -50,10 +50,10 @@ export const networksInfo: { [key: string]: INetworkInfo } = {
     name: NetworkNames.REGTEST,
     messagePrefix: "\u0015Runebase Signed Message:\n",
     bech32: "tb",
-    bip32: { public: 87654827, private: 87655724 },
-    pubKeyHash: 113,
-    scriptHash: 123,
-    wif: 202,
+    bip32: { public: 87524031, private: 87524516 },
+    pubKeyHash: 11,
+    scriptHash: 106,
+    wif: 229,
   },
 }
 

@@ -21,25 +21,25 @@ describe("Wallet", () => {
 
   it("recovers wallet from mnemonic", async () => {
     const wallet = await network.fromMnemonic(testMnemonic)
-    assert.equal(wallet.address, "na8iDoMiWs1tobsVgxdU29xD78LqJj8Gkh")
+    assert.equal(wallet.address, "5XfBnixL6TkXPPefCAexZNBxug4ciSKkQw")
   })
 
   it("recovers wallet from mnemonic with password", async () => {
     const wallet = await network.fromMnemonic(testMnemonic, password)
 
-    assert.equal(wallet.address, "nV5FqbtGTHpAHBoG2PHq28A7N4KbDaiBkQ")
+    assert.equal(wallet.address, "5SbjQXUt2tYnryaRXbKKZLPsAc3NgiPMxZ")
   })
 
-  const wifPrivateKey = "WzxXxpgKjAg2sk4y7ieFB2WkhAgbJ2bS2bpTPFS3xVKcThVkUtGf"
+  const wifPrivateKey = "b1y7SStdguQYnNWXdXQatfp8sKjXnxx3gSek6W5Q2TgH11eSXYh9"
 
   it("recovers wallet from WIF", () => {
     const wallet = network.fromWIF(wifPrivateKey)
 
-    assert.equal(wallet.address, "nmLUR7Jsqycqp374TkDAcrErwUydEhcwnc")
+    assert.equal(wallet.address, "5oKx3oppVYF7Tvd1R85hRzU7QdJNoG2aoq")
   })
 
   it("recovers wallet from EncryptedPrivateKey", () => {
-    const wif = "WushkEqJZMZswfD3nY7G7SGBbevi2ZkrSxLqESSnFK77DQ2dDn2j"
+    const wif = "b1y7SStdguQYnNWXdXQatfp8sKjXnxx3gSek6W5Q2TgH11eSXYh9"
     const encryptPassword = "testtest"
 
     const wallet = network.fromWIF(wif)
@@ -92,7 +92,7 @@ describe("Wallet", () => {
     const insight = network.insight()
     const wallet = network.fromWIF(wifPrivateKey)
 
-    const toAddress = "npuqCtHQx1FdhNpYCGsfS8pW3GUKqxxpQF"
+    const toAddress = "5dwGFyKtnAF4Vi2BC5yAPYJBR1YbfEEN94"
     const amount = 1e8 // 1 runebase (in sat)
 
     const senderOldInfo = await insight.getInfo(wallet.address)
