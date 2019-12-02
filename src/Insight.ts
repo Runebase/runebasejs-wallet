@@ -4,8 +4,8 @@ import { INetworkInfo } from "./Network"
 import { NetworkNames } from "./constants"
 
 const INSIGHT_BASEURLS: { [key: string]: string } = {
-  [NetworkNames.MAINNET]: "https://explorer.runebase.io/runebase-insight-api",
-  [NetworkNames.TESTNET]: "https://testnet.runebase.io/runebase-insight-api",
+  [NetworkNames.MAINNET]: "https://explorer2.runebase.io/runebase-insight-api",
+  [NetworkNames.TESTNET]: "https://testnet2.runebase.io/runebase-insight-api",
   [NetworkNames.REGTEST]: "http://localhost:3001/runebase-insight-api",
 }
 
