@@ -33,7 +33,7 @@ export const networksInfo: { [key: string]: INetworkInfo } = {
     messagePrefix: "\u0015Runebase Signed Message:\n",
     bech32: "bc",
     bip32: { public: 92717614, private: 92724465 },
-    pubKeyHash: 60,
+    pubKeyHash: 61,
     scriptHash: 123,
     wif: 216,
   },
