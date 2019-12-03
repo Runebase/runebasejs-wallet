@@ -75,9 +75,19 @@ export class Insight {
    * @param nblocks
    */
   public async estimateFee(nblocks: number = 6): Promise<any> {
-    const res = await this.axios.get(`/utils/estimatefee?nbBlocks=${nblocks}`)
+    /** 
+    * // This no longer works in new explorer
+    * // Broken: estimatefee is no longer part of runebase core
+    * // to be replace with estimatesmartfee
+    * // estimatesmartfee needs to be added to the insight-api
+    * // Temp fixed with using feerate -1
+    *
+    * const res = await this.axios.get(`/utils/estimatefee?nbBlocks=${nblocks}`)
+    * const feeRate: number = res.data   
+    *
+    */
 
-    const feeRate: number = res.data
+    const feeRate: number = -1
     if (typeof feeRate !== "number" || feeRate < 0) {
       return -1
     }
